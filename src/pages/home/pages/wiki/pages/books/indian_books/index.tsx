@@ -2,13 +2,13 @@ import { ReactNode } from "react";
 import ChapterBox from "../../../../../../../components/mymaterialui/chapter_box";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import data from './data.json'
+import contents from './contents.json'
 import shuffle_array from "../../../../../../../utils/shuffle_array";
 import { RouteObject } from "react-router-dom";
 import PartStack from "../../../../../../../components/mymaterialui/part_stack";
 
 function IndianBooks(): ReactNode {
-    const content: { name: string, href: string }[] = shuffle_array(data);
+    const content: { name: string, href: string }[] = shuffle_array(contents);
     <Typography>
         Indian books contents
     </Typography>
